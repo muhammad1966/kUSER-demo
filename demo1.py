@@ -1,5 +1,6 @@
 import cv2
 import face_recognition
+import random
 
 
 cap = cv2.VideoCapture(0)
