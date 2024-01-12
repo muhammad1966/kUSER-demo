@@ -1,5 +1,6 @@
 import smtplib
 import getpass
+import ssl
 
 HOST = 'smtp-mail.outlook.com'
 PORT = 587
@@ -16,7 +17,7 @@ try:
     status_code, response = smtp.ehlo()
     print(f'[*] Pinging the server: {status_code} {response}')
 
-    status_code, response = smtp.starttls()
+    status_code, response = smtp.starttls(context=ssl.create_default_context())
     print(f'[*] Starting tls connection: {status_code} {response}')
 
     status_code, response = smtp.login(from_email, password)
