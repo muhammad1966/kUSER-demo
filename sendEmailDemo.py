@@ -1,6 +1,6 @@
 import smtplib
 import getpass
-import random
+import ssl
 
 HOST = 'smtp-mail.outlook.com'
 PORT = 587
