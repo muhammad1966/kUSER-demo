@@ -5,8 +5,8 @@ import ssl
 HOST = 'smtp-mail.outlook.com'
 PORT = 587
 
-from_email = 'muhammadsunusi909@outlook.com'
-to_email = 'bsmuhammad352@gmail.com'
+from_email = 'EmailOfTheSenderApplication'
+to_email = 'TheEmailToSendTo'
 password = getpass.getpass('Enter your password: ')
 
 message = f'Subject: Demo email\r\n\r\nHey, this is just a demo email\r\n'
